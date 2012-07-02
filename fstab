@@ -10,4 +10,5 @@ proc            /proc           proc    nodev,noexec,nosuid 0       0
 # /boot was on /dev/sda1 during installation
 UUID=84252ca3-d4a1-4eb2-b53e-8f2b80034f45 /boot           ext2    defaults        0       2
 /dev/mapper/precise32-swap_1 none            swap    sw              0       0
+#Edit this line, replacing /PATH/TO/HOST/SHARE with the location of woce-build on your host machine
 10.0.2.2:/PATH/TO/HOST/SHARE	/srv/share	nfs	soft,intr,rsize=8192,wsize=8192 0 0
