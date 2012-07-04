@@ -1,9 +1,5 @@
 #!/bin/sh
-rm -rf ./LunaSysMgr
-cp -r /srv/share/LunaSysMgr ./
+rsync -tr --delete /srv/share/LunaSysMgr .
 cd ./woce-build
 make custom
-cd ../
-rm -rf /srv/share/LunaSysMgr
-cp -r ./LunaSysMgr /srv/share/LunaSysMgr
-rm -rf ./LunaSysMgr
+rsync ./packages/sysmgr/luna-sysmgr/build/custom/armv7-stage/release-topaz/ /srv/share/release-topaz
