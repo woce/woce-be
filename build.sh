@@ -2,4 +2,6 @@
 cp /srv/share/LunaSysMgr ./
 cd woce-build
 make custom
-cp packages/sysmgr/luna-sysmgr/build/woce/armv7-stage/release-topaz/LunaSysMgr /srv/share/
+mkdir -p /srv/share/build
+cp -r packages/sysmgr/luna-sysmgr/build/woce/armv7-stage/release-topaz/ /srv/share/
+rm -rf ./LunaSysMgr
